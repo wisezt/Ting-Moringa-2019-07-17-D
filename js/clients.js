@@ -87,6 +87,7 @@ let theItem;
 function showeditingBox(item) {
   document.getElementById("editingBox").style.display = "block";
   document.getElementById("oldItem").innerHTML = allClients.clients[0][item];
+  document.getElementById("newItem").value = allClients.clients[0][item];
   theItem = item;
 
 }
