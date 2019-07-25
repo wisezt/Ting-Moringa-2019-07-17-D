@@ -896,8 +896,8 @@ input:focus {
 
 /* Editing Box */
 .editingBox {
-  width: 400px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   position: absolute;
   left: 500px;
   top: 300px;
@@ -911,11 +911,61 @@ input:focus {
   cursor: pointer;
 }
 
-.editingBox-margin-40 {
+.editingBox-width-350 {
+  width: 400px;
+  height: 40px;
   margin: 5px;
+  margin-left: 10px;
+  margin-top: 30px;
+  position: static;
 }
 
 .editingBox input {
   font-size: 1.5rem;
   font-family: 'Dosis', sans-serif;
+}
+
+.editingBox-marginLeft-20{
+  margin-left: 10px;
+}
+
+.editingBox-float-right-20{
+  float: right;
+  margin-right: 20px;
+  width: 150px;
+  height: 40px;
+}
+
+.editing-box-table{
+  width: 400px;
+  height: 150px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow:hidden
+}
+
+.editing-box-button{
+  width: 150px;
+  height: 40px;
+  margin: auto;
+margin-top: 40px;
+}
+
+.editing-box-button-item{
+  margin: auto;
+}
+
+.float-right{
+  position: relative;
+  float: right;
+}
+
+.editing-box-value-size{
+width:  200px;
+height: 75px;
+}
+
+.overflow-hiden{
+  overflow: hidden;
 }

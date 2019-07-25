@@ -111,13 +111,13 @@
               <tr class="client-basic-information-tr">
                 <td>Email:</td>
                 <td>
-                  <div id="Email" onclick="showeditingBox('Email')"  class="margin-left-45px hover-pointer"></div>
+                  <div id="Email" onclick="showeditingBox('Email')" class="margin-left-45px hover-pointer"></div>
                 </td>
               </tr>
               <tr class="client-basic-information-tr">
                 <td>Address:</td>
                 <td>
-                  <div id="Address" onclick="showeditingBox('Address')"  class="margin-left-45px hover-pointer"></div>
+                  <div id="Address" onclick="showeditingBox('Address')" class="margin-left-45px hover-pointer"></div>
                 </td>
               </tr>
             </table>
@@ -127,37 +127,37 @@
               <tr class="client-basic-information-tr">
                 <td>Next to Kin:</td>
                 <td>
-                  <div id="NextToKin" onclick="showeditingBox('NextToKin')"  class="margin-left-115px hover-pointer"></div>
+                  <div id="NextToKin" onclick="showeditingBox('NextToKin')" class="margin-left-115px hover-pointer"></div>
                 </td>
               </tr>
               <tr class="client-basic-information-tr">
                 <td>Intake Date:</td>
                 <td>
-                  <div id="IntakeDate"  onclick="showeditingBox('IntakeDate')"  class="margin-left-115px hover-pointer"></div>
+                  <div id="IntakeDate" onclick="showeditingBox('IntakeDate')" class="margin-left-115px hover-pointer"></div>
                 </td>
               </tr>
               <tr class="client-basic-information-tr">
                 <td>Case Worker:</td>
                 <td>
-                  <div id="CaseWorker"  onclick="showeditingBox('CaseWorker')"  class="margin-left-115px hover-pointer"></div>
+                  <div id="CaseWorker" onclick="showeditingBox('CaseWorker')" class="margin-left-115px hover-pointer"></div>
                 </td>
               </tr>
               <tr class="client-basic-information-tr">
                 <td>Alerts:</td>
                 <td>
-                  <div id="Alerts"  onclick="showeditingBox('Alerts')"  class="green-font margin-left-115px hover-pointer"></div>
+                  <div id="Alerts" onclick="showeditingBox('Alerts')" class="green-font margin-left-115px hover-pointer"></div>
                 </td>
               </tr>
               <tr class="client-basic-information-tr margin-left-115px">
                 <td>Status:</td>
                 <td>
-                  <div id="Status"  onclick="showeditingBox('Status')"  class="green-font margin-left-115px hover-pointer"></div>
+                  <div id="Status" onclick="showeditingBox('Status')" class="green-font margin-left-115px hover-pointer"></div>
                 </td>
               </tr>
               <tr class="client-basic-information-tr">
                 <td>Precautions:</td>
                 <td>
-                  <div id="Precautions"  onclick="showeditingBox('Precautions')"  class="green-font margin-left-115px hover-pointer"></div>
+                  <div id="Precautions" onclick="showeditingBox('Precautions')" class="green-font margin-left-115px hover-pointer"></div>
                 </td>
               </tr>
             </table>
@@ -298,43 +298,56 @@
     </div>
 
     <div id="editingBox" class="editingBox">
+      <table class="editing-box-table">
+        <tr>
+          <td>
+            <div class="float-left  editingBox-float-right-20">
+          Old Value:
+            </div>
 
-      <div class="vertical-center ">
-        <form class="" action="" method="post">
-          <div class="editingBox-margin-40">
-            <div class="float-left">
-              <p>Old: </p>
+            </td>
+          <td>
+            <div id="oldItem" class="float-left editingBox-marginLeft-20 overflow-hiden editing-box-value-size">
+
             </div>
-            <div id="oldItem" class="float-left">
-              asdfasd
-            </div>
-          </div>
-          <br />
-          <div class="editingBox-margin-40">
-            <div class="float-left ">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="float-left  editingBox-float-right-20">
               New Value:
             </div>
+          </td>
+          <td>
+            <div class="float-left editingBox-marginLeft-20">
+                <input id="newItem" class="" type="text" name="" value=""></td>
+            </div>
 
-            <div class="float-left ">
-              <input id="newItem" class="" type="text" name="" value="">
+        </tr>
+
+
+      </table>
+
+            <div class="editing-box-button">
+              <div class="float-left hover-pointer float-left" onclick="editingBoxCancel()">
+                Cancel
+              </div>
+
+              <div class="float-left hover-pointer float-right" onclick="editingBoxOk()">
+                OK
+              </div>
             </div>
 
 
-          </div>
 
-        </form>
 
-        <br>
-        <div class="editingBox-margin-40">
-          <div class="float-left hover-pointer editingBox-margin-40" onclick="editingBoxCancel()">
-            Cancel
-          </div>
-          <div class="float-left hover-pointer editingBox-margin-40" onclick="editingBoxOk()">
-            OK
-          </div>
-        </div>
 
-      </div>
+
+
+
+
+
+
 
 
 
