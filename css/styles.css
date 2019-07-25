@@ -484,6 +484,7 @@ input:focus {
   margin-left: 60px;
   width: 500px;
   height: 250px;
+  overflow: hidden;
 }
 
 .client-basic-information-02 {
@@ -507,6 +508,13 @@ input:focus {
 .client-basic-information .margin-left-115px {
   margin-left: 115px;
 }
+
+.client-basic-information-box{
+  height: 1.5rem;
+  width: 310px;
+}
+
+
 
 /* client-information menu */
 .client-information-menu {
@@ -952,8 +960,17 @@ input:focus {
 margin-top: 40px;
 }
 
+
+
 .editing-box-button-item{
   margin: auto;
+}
+
+
+.text-shadow:hover{
+
+    text-shadow: 0px 0px 3px #259c44;
+
 }
 
 .float-right{
@@ -961,9 +978,14 @@ margin-top: 40px;
   float: right;
 }
 
+.editing-box-item-value{
+  height: 70px;
+}
+
 .editing-box-value-size{
 width:  200px;
-height: 75px;
+height: 70px;
+vertical-align: middle;
 }
 
 .overflow-hiden{

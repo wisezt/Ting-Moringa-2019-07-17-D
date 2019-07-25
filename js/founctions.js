@@ -67,3 +67,23 @@ function selectedInfoMenu(menuId) {
       break;
   }
 }
+
+
+
+
+
+
+
+// functions which will be available soon
+function uploadPhoto(){
+  alert("Upload Image!");
+}
+
+
+function search(){
+    alert("Searching!");
+}
+
+function newIntake(){
+      alert("New Intake!");
+}

@@ -67,16 +67,16 @@
       <div class="search-bar float-left">
         <div class="search-bar-container-01 relative float-left">
           <!-- search icon -->
-          <div class="icon-search vertical-center margin-left-40"></div><!-- search content -->
+          <div onclick="search()" class="icon-search vertical-center margin-left-40"></div><!-- search content -->
           <div class="content vertical-center margin-left-115 ">
             <form class="" action="index.html" method="post"><input class="content" type="text" name="" placeholder="Search Clients"></form>
           </div>
         </div>
       </div>
-      <div class="icon-plus-wrap float-left">
+      <div onclick="newIntake()" class="icon-plus-wrap float-left">
         <div class="vertical-center icon-plus"></div>
       </div><!-- New Intake -->
-      <div class="new-intake float-left margin-left-40">
+      <div onclick="newIntake()" class="new-intake float-left margin-left-40">
         <p>New Intake</p>
       </div>
     </div><!-- Client details -->
@@ -85,7 +85,7 @@
       <!-- client basic information -->
       <div class="client-basic-information">
         <!-- image -->
-        <div class="client-photo float-left">
+        <div onclick="uploadPhoto()" class="client-photo float-left">
           <div class="center"><img src="" alt=""></div>
           <div class="center">
             <p>Upload</p>
@@ -117,7 +117,7 @@
               <tr class="client-basic-information-tr">
                 <td>Address:</td>
                 <td>
-                  <div id="Address" onclick="showeditingBox('Address')" class="margin-left-45px hover-pointer"></div>
+                  <div id="Address" onclick="showeditingBox('Address')" class="margin-left-45px hover-pointer client-basic-information-box"></div>
                 </td>
               </tr>
             </table>
@@ -301,25 +301,25 @@
       <table class="editing-box-table">
         <tr>
           <td>
-            <div class="float-left  editingBox-float-right-20">
+            <div class="float-left  editingBox-float-right-20 editing-box-item-value">
           Old Value:
             </div>
 
             </td>
           <td>
-            <div id="oldItem" class="float-left editingBox-marginLeft-20 overflow-hiden editing-box-value-size">
+            <div id="oldItem" class="float-left editingBox-marginLeft-20 overflow-hiden editing-box-value-size editing-box-item-value">
 
             </div>
           </td>
         </tr>
         <tr>
           <td>
-            <div class="float-left  editingBox-float-right-20">
+            <div class="float-left  editingBox-float-right-20 editing-box-item-value">
               New Value:
             </div>
           </td>
           <td>
-            <div class="float-left editingBox-marginLeft-20">
+            <div class="float-left editingBox-marginLeft-20 editing-box-item-value">
                 <input id="newItem" class="" type="text" name="" value=""></td>
             </div>
 
@@ -329,11 +329,11 @@
       </table>
 
             <div class="editing-box-button">
-              <div class="float-left hover-pointer float-left" onclick="editingBoxCancel()">
+              <div class="float-left hover-pointer float-left text-shadow" onclick="editingBoxCancel()">
                 Cancel
               </div>
 
-              <div class="float-left hover-pointer float-right" onclick="editingBoxOk()">
+              <div class="float-left hover-pointer float-right text-shadow" onclick="editingBoxOk()">
                 OK
               </div>
             </div>
