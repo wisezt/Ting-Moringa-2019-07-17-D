@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- Designed By Ting 2019-07 -->
+
+<head>
+  <meta charset="utf-8">
+  <title>Clients</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+</head>
+
+<body>
+  <!-- Side Bar -->
+  <div id="side-bar" class="side-bar">
+    <!-- Logo -->
+    <div class="logo">
+      <!--<img src="" alt="MORINGA">--><img src="img/MORIGNGA_LOGO.jpg" alt="logo"></div><!-- Main Menu -->
+    <div class="side-bar-menu margin-top-90px">
+      <!-- Dashboard -->
+      <div id="menu-Dashboard" class="side-bar-menu-contianer" onclick="showContent('Dashboard')">
+        <div class=" wrap relative">
+          <div id="icon-Dashboard" class="icon-dashboard vertical-center"></div>
+          <div class="vertical-center side-bar-text-content ">
+            <p>Dashboard</p>
+          </div>
+        </div>
+      </div><!-- Clients -->
+      <div id="menu-Clients" class="side-bar-menu-contianer-selected" onclick="showContent('Clients')">
+        <div class="wrap relative">
+          <div id="icon-Clients" class="icon-clients-selected vertical-center"></div>
+          <div class="vertical-center side-bar-text-content">
+            <p>Clients</p>
+          </div>
+        </div>
+      </div><!-- Users -->
+      <div id="menu-Users" class="side-bar-menu-contianer" onclick="showContent('Users')">
+        <div class="wrap relative">
+          <div id="icon-Users" class="icon-users vertical-center"></div>
+          <div class="vertical-center side-bar-text-content">
+            <p>Users</p>
+          </div>
+        </div>
+      </div>
+    </div><!-- Collapse and Logout -->
+    <div class="bottom-menu">
+      <!-- Collapse -->
+      <div id="menu-Collapse" class="side-bar-menu-contianer" onclick="showContent('Collapse')">
+        <div class="wrap relative">
+          <div id="icon-Collapse" class="icon-collapse vertical-center"></div>
+          <div class="vertical-center side-bar-text-content">
+            <p>Collapse</p>
+          </div>
+        </div>
+      </div><!-- Logout -->
+      <div id="menu-Logout" class="side-bar-menu-contianer" onclick="showContent('Logout')">
+        <div class="wrap relative">
+          <div id="icon-Logout" class="icon-logout vertical-center"></div>
+          <div class="vertical-center side-bar-text-content">
+            <p>Logout</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- Main Frame -->
+  <div id="main-frame" class="main-frame">
+    <div class="main-frame-bg"></div><!-- Search Bar -->
+    <div id="search-bar-frame" class="search-bar-frame">
+      <div class="search-bar float-left">
+        <div class="search-bar-container-01 relative float-left">
+          <!-- search icon -->
+          <div class="icon-search vertical-center margin-left-40"></div><!-- search content -->
+          <div class="content vertical-center margin-left-115 ">
+            <form class="" action="index.html" method="post"><input class="content" type="text" name="" placeholder="Search Clients"></form>
+          </div>
+        </div>
+      </div>
+      <div class="icon-plus-wrap float-left">
+        <div class="vertical-center icon-plus"></div>
+      </div><!-- New Intake -->
+      <div class="new-intake float-left margin-left-40">
+        <p>New Intake</p>
+      </div>
+    </div><!-- Client details -->
+    <div id="content" class="main-block-content"></div>
+    <div id="client-details" class="client-details">
+      <!-- client basic information -->
+      <div class="client-basic-information">
+        <!-- image -->
+        <div class="client-photo float-left">
+          <div class="center"><img src="" alt=""></div>
+          <div class="center">
+            <p>Upload</p>
+            <p>Image</p>
+          </div>
+        </div>
+        <div class="client-basic-information-content float-left">
+          <!-- client infomation box A -->
+          <div class="client-basic-information-01 float-left">
+            <table>
+              <tr class="client-basic-information-tr">
+                <td>Name:</td>
+                <td>
+                  <div id="Name" onclick="showeditingBox('Name')" class="margin-left-45px hover-pointer"></div>
+                </td>
+              </tr>
+              <tr class="client-basic-information-tr">
+                <td>Client Type:</td>
+                <td>
+                  <div id="Client" onclick="showeditingBox('Client')" class="margin-left-45px hover-pointer"></div>
+                </td>
+              </tr>
+              <tr class="client-basic-information-tr">
+                <td>Email:</td>
+                <td>
+                  <div id="Email" onclick="showeditingBox('Email')"  class="margin-left-45px hover-pointer"></div>
+                </td>
+              </tr>
+              <tr class="client-basic-information-tr">
+                <td>Address:</td>
+                <td>
+                  <div id="Address" onclick="showeditingBox('Address')"  class="margin-left-45px hover-pointer"></div>
+                </td>
+              </tr>
+            </table>
+          </div><!-- client infomation box B -->
+          <div class=" client-basic-information-02 float-left">
+            <table>
+              <tr class="client-basic-information-tr">
+                <td>Next to Kin:</td>
+                <td>
+                  <div id="NextToKin" onclick="showeditingBox('NextToKin')"  class="margin-left-115px hover-pointer"></div>
+                </td>
+              </tr>
+              <tr class="client-basic-information-tr">
+                <td>Intake Date:</td>
+                <td>
+                  <div id="IntakeDate"  onclick="showeditingBox('IntakeDate')"  class="margin-left-115px hover-pointer"></div>
+                </td>
+              </tr>
+              <tr class="client-basic-information-tr">
+                <td>Case Worker:</td>
+                <td>
+                  <div id="CaseWorker"  onclick="showeditingBox('CaseWorker')"  class="margin-left-115px hover-pointer"></div>
+                </td>
+              </tr>
+              <tr class="client-basic-information-tr">
+                <td>Alerts:</td>
+                <td>
+                  <div id="Alerts"  onclick="showeditingBox('Alerts')"  class="green-font margin-left-115px hover-pointer"></div>
+                </td>
+              </tr>
+              <tr class="client-basic-information-tr margin-left-115px">
+                <td>Status:</td>
+                <td>
+                  <div id="Status"  onclick="showeditingBox('Status')"  class="green-font margin-left-115px hover-pointer"></div>
+                </td>
+              </tr>
+              <tr class="client-basic-information-tr">
+                <td>Precautions:</td>
+                <td>
+                  <div id="Precautions"  onclick="showeditingBox('Precautions')"  class="green-font margin-left-115px hover-pointer"></div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div><!-- client information menu -->
+      <div class="client-information-menu relative">
+        <div id="gi" class="client-information-menu-container float-left bottom-line green-bottom" onclick="selectedInfoMenu('gi')">
+          <div class="client-information-menu-box ">
+            <p>Genral Information</p>
+          </div>
+        </div>
+        <div id="pl" class="client-information-menu-container float-left bottom-line " onclick="selectedInfoMenu('pl')">
+          <div class="client-information-menu-box">
+            <p>Placement</p>
+          </div>
+        </div>
+        <div id="fa" class="client-information-menu-container float-left bottom-line " onclick="selectedInfoMenu('fa')">
+          <div class="client-information-menu-box">
+            <p>Family</p>
+          </div>
+        </div>
+        <div id="as" class="client-information-menu-container float-left bottom-line " onclick="selectedInfoMenu('as')">
+          <div class="client-information-menu-box">
+            <p>Assessment</p>
+          </div>
+        </div>
+      </div><!-- Other Information -->
+      <div id="fa-container" class="other-info-container">
+        <h2>Family...</h2>
+      </div>
+      <div id="as-container" class="other-info-container">
+        <h2>Assessment...</h2>
+      </div>
+      <div id="pl-container" class="other-info-container">
+        <h2>Placement...</h2>
+      </div><!-- General information -->
+      <div id="gi-container" class="general-infomation">
+        <form class="general-infomation-form" action="" method="post">
+          <div class="general-infomation-01 float-left">
+            <!-- Date of Birth -->
+            <div class="general-infomation-input-box relative  container-Date-of-Birth">
+              <div class="Date-of-Birth vertical-center">
+                <p>Date of Birth</p>
+              </div>
+              <div id="GI-Birthday" class="absolute-bottom-5px GI-p-tag">
+                <p></p>
+              </div>
+              <div id="icon-calendar-id" class="icon-calendar" onclick="showCalendar()"></div>
+            </div><!-- Who all lives at home -->
+            <div class="general-infomation-input-box relative">
+              <div class=" absolute-bottom-5px"><input type="text" name="who-all-home" placeholder="Who All Lives at Home?"></div>
+            </div><!-- How many popele live At home -->
+            <div class="general-infomation-input-box relative">
+              <div class="absolute-bottom-5px"><input type="text" name="How-many-people" placeholder="How Many People Live At Home?"></div>
+            </div><!-- Are your children in Care -->
+            <div class="general-infomation-input-box relative">
+              <div class="absolute-bottom-5px"><input type="text" name="children-in-care" placeholder="Are Your Children in Care?"></div>
+            </div>
+          </div>
+          <div class="general-information-02 float-left">
+            <!-- How long have you lived in the home -->
+            <div class="general-infomation-input-box relative">
+              <div class="absolute-bottom-5px"><input type="text" name="how-long-home" placeholder="How Long Have You Lived in The Home?"></div>
+            </div><!-- Living Together -->
+            <div class="general-infomation-input-box relative">
+              <div class="absolute-bottom-5px inline-height-32px">
+                <div class="float-left">
+                  <p>Lving Together</p>
+                </div>
+                <div class="float-left margin-left-10px"><label class="container"><input type="radio" name="living-together" value="Yes"><span class="checkmark"></span></label></div>
+                <div class="float-left margin-left-10px">
+                  <p>Yes</p>
+                </div>
+                <div class="float-left margin-left-10px"><label class="container"><input type="radio" name="living-together" value="Yes"><span class="checkmark"></span></label></div>
+                <div class="float-left margin-left-10px">
+                  <p>No</p>
+                </div>
+              </div>
+            </div><!-- First Nation Membership -->
+            <div class="general-infomation-input-box relative">
+              <div class="absolute-bottom-5px"><input type="text" name="children-in-care" placeholder="First Nation Membership (If Applicable)"></div>
+            </div><!-- bottom -->
+            <div class="general-infomation-input-box relative no-border">
+              <div class="absolute-bottom-0px-height-60px"><input class="button" type="submit" value="Save & Continue"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Placement -->
+      <!-- Family Tree -->
+      <!-- Assessment -->
+    </div>
+    <!-- Calendar -->
+    <div id="calendar" class="calendar-div">
+      <div class="year-month row">
+        <div class="small-box"></div>
+        <div id="minus" onclick="minus()" class="small-box minus ">
+          <p>
+            <</p> </div> <div onclick="chooseMonth()" class="container-77 float-left">
+              <h4 id="month"></h4>
+        </div>
+        <div onclick="chooseYear()" class="container-77 float-left">
+          <h4 id="year"></h4>
+        </div>
+        <div id="plus" onclick="plus()" class="small-box plus float-left">
+          <p>></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-box">
+          <p>S</p>
+        </div>
+        <div class="small-box">
+          <p>M</p>
+        </div>
+        <div class="small-box">
+          <p>T</p>
+        </div>
+        <div class="small-box">
+          <p>W</p>
+        </div>
+        <div class="small-box">
+          <p>T</p>
+        </div>
+        <div class="small-box">
+          <p>F</p>
+        </div>
+        <div class="small-box">
+          <p>S</p>
+        </div>
+      </div>
+      <div id="id-dates" class="dates"></div>
+      <div class="calendar-btn row">
+        <div class="container-90 float-right"><input class="calendar-button" type="button" onclick="ok()" name="" value="Ok"></div>
+        <div class="container-90 float-right"><input class="calendar-button" type="button" onclick="cancel()" name="" value="Cancel"></div>
+      </div>
+    </div>
+
+    <div id="editingBox" class="editingBox">
+
+      <div class="vertical-center horizonntal-center ">
+        <form class="" action="" method="post">
+          <div class="editingBox-margin-40">
+            <div class="float-left">
+              <p>Old: </p>
+            </div>
+            <div id="oldItem" class="float-left">
+              asdfasd
+            </div>
+          </div>
+          <br />
+          <div class="editingBox-margin-40">
+            <div class="float-left ">
+              New Value:
+            </div>
+
+            <div class="float-left ">
+              <input id="newItem" class="" type="text" name="" value="">
+            </div>
+
+
+          </div>
+
+        </form>
+
+        <br>
+        <div class="editingBox-margin-40">
+          <div class="float-left hover-pointer editingBox-margin-40" onclick="editingBoxCancel()">
+            Cancel
+          </div>
+          <div class="float-left hover-pointer editingBox-margin-40" onclick="editingBoxOk()">
+            OK
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="js/calendar.js"></script>
+    <script src="js/clients.js"></script>
+    <script src="js/founctions.js"></script>
+</body>
+<!-- Designed By Ting 2019-07 -->
+
+</html>

@@ -1,0 +1,921 @@
+/* Designed by Ting 2019 */
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
+body {
+  font-family: 'Dosis', sans-serif;
+  color: #6b6f82;
+  background-repeat: no-repeat;
+  margin: 0px;
+  width: 1920px;
+  height: 1080px;
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.size {
+  height: 100%;
+}
+
+p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  display: block;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+/* Common use */
+.float-left {
+  position: relative;
+  float: left;
+}
+
+/* need to be applied to parent elements for the element which need to be vertical-center */
+.relative {
+  position: relative;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.horizonntal-center {
+  margin: 0;
+  position: absolute;
+  left: 20%;
+  -ms-transform: translateZ(-20%);
+  transform: translateZ(-20%);
+}
+
+/* Side Bar */
+.logo {
+  color: #259c44;
+  width: 100px;
+  margin-left: 45px;
+  margin-top: 65px;
+}
+
+.side-bar {
+  height: 100%;
+  width: 346px;
+  position: relative;
+  float: left;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  box-shadow: 0px 0px 10px #888888;
+  overflow: hidden;
+}
+
+.side-bar a {
+  padding: 0px;
+  font-size: 1.5rem;
+  color: #6b6f82;
+  display: block;
+}
+
+.side-bar a:hover {
+  /* For browsers that do not support gradients */
+  background-color: #196b2f;
+  background-image: linear-gradient(to right, #196b2f, #259c44);
+  color: #ffffff;
+  height: auto;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.side-bar-menu-contianer {
+  width: 317px;
+  height: 80px;
+  margin: 0 auto 0px 0px;
+}
+
+.side-bar .side-bar-menu-contianer:hover {
+  background-color: #196b2f;
+  background-image: linear-gradient(to right, #196b2f, #259c44);
+  color: #ffffff;
+  height: auto;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.side-bar-menu-contianer-selected {
+  width: 317px;
+  height: 80px;
+  margin: 0 auto 0px 0px;
+  background-color: #196b2f;
+  background-image: linear-gradient(to right, #196b2f, #259c44);
+  color: #ffffff;
+  height: auto;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.margin-top-90px {
+  margin-top: 90px;
+}
+
+.wrap {
+  height: 80px;
+  margin-left: 20px;
+}
+
+.dashboard {
+  height: 50px;
+}
+
+.icon-dashboard {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/dashboard-solid.svg);
+  background-size: 35px 35px;
+}
+
+.side-bar-menu-contianer:hover .icon-dashboard {
+  background: url(../img/dashboard-solid-white.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.icon-dashboard-selected {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-size: 35px 35px;
+  background: url(../img/dashboard-solid-white.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  color: white;
+}
+
+.side-bar-text-content {
+  margin-left: 55px;
+}
+
+.icon-clients {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/clients-solid.svg);
+  background-size: 35px 35px;
+}
+
+.side-bar-menu-contianer:hover .icon-clients {
+  background: url(../img/clients-solid-white.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.icon-clients-selected {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/clients-solid.svg);
+  background-size: 35px 35px;
+  background: url(../img/clients-solid-white.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.icon-users {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/user-cog-solid.svg);
+  background-size: 35px 35px;
+}
+
+.side-bar-menu-contianer:hover .icon-users {
+  background: url(../img/user-cog-solid-white.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.icon-users-selected {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/user-cog-solid.svg);
+  background-size: 35px 35px;
+  background: url(../img/user-cog-solid-white.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* bottom menu */
+.bottom-menu {
+  margin-top: 440px;
+  /* margin:0px auto 50px 0px; */
+}
+
+.icon-collapse {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/caret-left-solid.svg);
+  background-size: 35px 35px;
+  background-position: center;
+}
+
+.side-bar-menu-contianer:hover .icon-collapse {
+  background: url(../img/caret-left-solid-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-collapse-selected {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/caret-left-solid.svg);
+  background-size: 35px 35px;
+  background-position: center;
+  background: url(../img/caret-left-solid-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-logout {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/door-open-solid.svg);
+  background-size: 35px 35px;
+}
+
+.side-bar-menu-contianer:hover .icon-logout {
+  background: url(../img/door-open-solid-white.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.icon-logout-selected {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/door-open-solid.svg);
+  background-size: 35px 35px;
+  background: url(../img/door-open-solid-white.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* Main Frame */
+.main-frame {
+  margin-top: 0px;
+  padding: 0px;
+  position: relative;
+  float: left;
+  top: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  width: 1574px;
+  height: 1080px;
+}
+
+.main-frame-bg {
+  background-color: #196b2f;
+  background-image: linear-gradient(to right, #196b2f, #259c44);
+  color: #ffffff;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  z-index: -10;
+}
+
+/* search bar */
+.search-bar-frame {
+  height: 70px;
+  width: 1495px;
+  position: relative;
+  float: none;
+  color: white;
+  margin-left: 40px;
+  margin-top: 16px;
+  margin-right: auto;
+}
+
+.search-bar-frame input[type=text] {
+  padding: 0px;
+  font-size: 1.5rem;
+  color: white;
+  display: block;
+  border: none;
+  width: 100%;
+  font-family: 'Dosis', sans-serif;
+  background: none;
+  width: 800px;
+}
+
+.search-bar-frame ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+.search-bar-frame ::-ms-input-placeholder {
+  color: white;
+}
+
+.search-bar-frame input:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.outline-none {
+  outline: none;
+}
+
+.search-bar {
+  position: relative;
+  margin-left: 0px;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 70px;
+  width: 1000px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.search-bar .content {
+  width: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.search-bar p {
+  color: #ffffff;
+  margin: auto;
+  line-height: 70px;
+}
+
+.search-bar-container-01 {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 70px;
+}
+
+.icon-search {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/search-solid-white.svg);
+  background-size: 35px 35px;
+}
+
+.margin-left-40 {
+  margin-left: 40px;
+}
+
+.margin-left-115 {
+  margin-left: 115px;
+}
+
+.new-intake {
+  line-height: 70px;
+  height: 70px
+}
+
+.icon-plus {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/plus-solid-white.svg);
+  background-size: 35px 35px;
+}
+
+.icon-plus-wrap {
+  height: 70px;
+  width: 35px;
+  margin-left: 40px;
+}
+
+.main-block-content {
+  margin-top: 54px;
+  margin-left: 40px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 1495px;
+  height: 915px;
+  box-shadow: 0px 0px 10px #888888;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 5px 5px 5px 5px;
+  display: none;
+}
+
+.content-center {
+  margin: auto;
+  margin-top: 400px;
+  width: 200px;
+  color: #6b6f82;
+}
+
+.content-center p {
+  color: #6b6f82;
+}
+
+/* Client details */
+.client-details {
+  margin-top: 54px;
+  margin-left: 40px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 1495px;
+  height: 915px;
+  box-shadow: 0px 0px 10px #888888;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 5px 5px 5px 5px;
+}
+
+/* client photo */
+.client-photo {
+  margin-left: 40px;
+  width: 250px;
+  height: 250px;
+  background-color: #ededed;
+}
+
+.client-photo:hover {
+  cursor: pointer;
+}
+
+.client-photo .center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.client-photo .center p {
+  text-align: center;
+}
+
+.client-photo .background-words {
+  z-index: -10;
+}
+
+/* client basic information */
+.client-basic-information {
+  height: 250px;
+  margin-top: 40px;
+}
+
+.client-basic-information-content {
+  width: 1205px;
+  height: 250px;
+}
+
+.client-basic-information-01 {
+  margin-left: 60px;
+  width: 500px;
+  height: 250px;
+}
+
+.client-basic-information-02 {
+  margin-left: 50px;
+  width: 500px;
+  height: 250px;
+}
+
+.client-basic-information-tr {
+  height: 41.67px;
+}
+
+.client-basic-information .green-font {
+  color: #27a448;
+}
+
+.client-basic-information .margin-left-45px {
+  margin-left: 45px;
+}
+
+.client-basic-information .margin-left-115px {
+  margin-left: 115px;
+}
+
+/* client-information menu */
+.client-information-menu {
+  margin-top: 60px;
+  height: 38px;
+  width: 100%;
+  border-bottom: 2px solid #ededed;
+}
+
+.client-information-menu-container {
+  height: 35px;
+}
+
+.client-information-menu-container:hover {
+  border-bottom: 5px solid #259c44;
+  cursor: pointer;
+}
+
+.green-bottom {
+  border-bottom: 5px solid #259c44;
+}
+
+.client-information-menu-box {
+  margin-left: 40px;
+  margin-right: 40px;
+  color: #6b6f82;
+  /* bottom:0px; */
+  /* vertical-align: bottom; */
+}
+
+.client-information-menu-box p {
+  color: #6b6f82;
+  margin: 0px auto;
+}
+
+/* general information */
+.general-infomation {
+  height: 380px;
+  position: static;
+  clear: both;
+  /* margin-top: 40px; */
+  margin-left: 40px;
+}
+
+.general-infomation-form {
+  height: 380px;
+  /* clear:right; */
+}
+
+.general-infomation-01 {
+  width: 667px;
+}
+
+.general-information-02 {
+  width: 667px;
+  margin-left: 80px;
+}
+
+.general-infomation-input-box {
+  width: 667px;
+  height: 95px;
+  margin: auto auto 0px auto;
+  line-height: 95px;
+  border-bottom: 5px solid #ededed;
+}
+
+.general-infomation-input-box:hover {
+  border-bottom: 5px solid #259c44;
+}
+
+.general-infomation-input-box input[type=text] {
+  padding: 0px;
+  font-size: 1.5rem;
+  color: #6b6f82;
+  display: block;
+  border: none;
+  width: 100%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.general-infomation-input-box p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.Date-of-Birth {
+  /* position: absolute;
+  bottom: 35px; */
+  width: 300px;
+}
+
+.Date-of-Birth p {
+  vertical-align: bottom;
+  line-height: normal;
+}
+
+.container-Date-of-Birth:hover {
+  color: #000000;
+}
+
+.GI-p-tag {
+  line-height: normal;
+  padding: 0px;
+  font-size: 1.5rem;
+  color: #6b6f82;
+  display: block;
+  border: none;
+  width: 100%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.icon-calendar {
+  height: 24px;
+  width: 24px;
+  background-image: url('../img/calendar-alt-regular.svg');
+  background-size: 24px 24px;
+  float: right;
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  display="none"
+}
+
+.icon-calendar:hover {
+  background-image: url('../img/calendar-alt-regular-green.svg');
+  cursor: pointer;
+}
+
+.inline-height-32px {
+  line-height: 32.22px;
+}
+
+.button {
+  background-color: #ededed;
+  border: none;
+  color: #6b6f82;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: 'Dosis', sans-serif;
+  width: 315px;
+  height: 60px;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.button:hover {
+  background-color: #259c44;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.no-border {
+  border-bottom: none;
+}
+
+.no-border:hover {
+  border-bottom: none;
+  cursor: pointer;
+}
+
+/* The radio button */
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: #eee;
+}
+
+.container:hover input~.checkmark {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.container input:checked~.checkmark {
+  background-color: #259c44;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 12px;
+  top: 8px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Addtional */
+.bottom-line {}
+
+.absolute-bottom-5px {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+}
+
+.absolute-bottom-0px-height-60px {}
+
+.margin-left-10px {
+  margin-left: 20px
+}
+
+.calendar-div {
+  width: 360px;
+  height: 360px;
+  background-color: #ededed;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0px 0px 10px #888888;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.calendar-div h4 {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px;
+  display: block;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  color: #6b6f82;
+  margin: 0px;
+}
+
+.calendar-div h4:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 3px #259c44;
+}
+
+.calendar-div p {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px;
+  display: block;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  color: #6b6f82;
+  font-size: 1rem;
+  margin: 0px auto;
+}
+
+.calendar-div p:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 3px #259c44;
+}
+
+.calendar-div .row {
+  width: 100%;
+  height: 45px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  /* background-color: #ededed; */
+}
+
+.calendar-div .small-box {
+  height: 45px;
+  position: relative;
+  float: left;
+  width: 51px;
+  text-align: center;
+  /* background-color: #ededed; */
+}
+
+.calendar-div .container-77 {
+  width: 77.14px;
+  height: 45px;
+}
+
+.calendar-div .float-left {
+  position: relative;
+  float: left;
+}
+
+.calendar-div .float-right {
+  position: relative;
+  float: right;
+}
+
+.calendar-div .dates {
+  width: 360px;
+  height: 225px;
+}
+
+.calendar-div .container-90 {
+  height: 45px;
+  width: 90px;
+}
+
+.calendar-div .calendar-button {
+  background-color: #ededed;
+  border: none;
+  color: #6b6f82;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Dosis', sans-serif;
+  bottom: 0px;
+  float: left;
+}
+
+.calendar-button:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 3px #259c44;
+}
+
+.icon-search:hover {
+  cursor: pointer;
+}
+
+.icon-plus-wrap:hover {
+  cursor: pointer;
+}
+
+.new-intake {
+  cursor: pointer;
+}
+
+.new-intake p {
+  margin: 0px auto;
+}
+
+.other-info-container {
+  display: none;
+  font-family: 'Dosis', sans-serif;
+  color: #6b6f82;
+  padding: auto;
+  text-align: center;
+  vertical-align: center;
+}
+
+.other-info-container h2 {
+  margin-top: 100px;
+  font-family: 'Dosis', sans-serif;
+  color: #6b6f82;
+}
+
+/* Editing Box */
+.editingBox {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 500px;
+  top: 300px;
+  background-color: white;
+  box-shadow: 0px 0px 10px #888888;
+  display: none;
+  font-size: 1.5rem;
+}
+
+.hover-pointer {
+  cursor: pointer;
+}
+
+.editingBox-margin-40 {
+  margin: 5px;
+}
+
+.editingBox input {
+  font-size: 1.5rem;
+  font-family: 'Dosis', sans-serif;
+}
