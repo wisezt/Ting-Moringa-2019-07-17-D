@@ -923,8 +923,8 @@ input:focus {
   width: 400px;
   height: 40px;
   margin: 5px;
-  margin-left: 10px;
-  margin-top: 30px;
+  margin-left: 20px;
+  margin-top: 50px;
   position: static;
 }
 
@@ -937,27 +937,35 @@ input:focus {
   margin-left: 10px;
 }
 
-.editingBox-float-right-20{
+/* .editingBox-float-right-20{
   float: right;
   margin-right: 20px;
   width: 150px;
   height: 40px;
-}
+} */
 
 .editing-box-table{
   width: 400px;
   height: 150px;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   overflow:hidden
 }
 
+.editing-box-table-td-name{
+  width: 120px;
+  height: 75px;
+float: right;
+  overflow:hidden
+}
+
+
 .editing-box-button{
   width: 150px;
   height: 40px;
   margin: auto;
-margin-top: 40px;
+margin-top: 20px;
 }
 
 
@@ -978,12 +986,18 @@ margin-top: 40px;
   float: right;
 }
 
+.editing-box-item-name{
+  width: 120px;
+  height: 70px;
+}
+
 .editing-box-item-value{
+  width: 250px;
   height: 70px;
 }
 
 .editing-box-value-size{
-width:  200px;
+width:  250px;
 height: 70px;
 vertical-align: middle;
 }
